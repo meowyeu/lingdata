@@ -1,0 +1,136 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Балабановой Екатерины</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+<style>
+html, body {
+height: 100%;
+margin: 0;
+}
+
+body {
+background-color: white;
+background-image: url("https://1s4oyld5dc.ucarecd.net/f53f9cec-7973-4b31-b46b-67b9c55d7529/");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, li, a {
+color: #0b3d0b;
+}
+a:hover,
+a:focus {
+color:  #2e7d32;
+text-decoration: underline;
+}
+</style>
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="padding-top:70px;"> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+					<img src="https://1s4oyld5dc.ucarecd.net/50de5da4-f6ea-43d8-b01f-b1e006a7fe1d/" style="height:350px; margin:30px 30px 50px 30px; " >
+						</div>
+						<div class="col-md-4">
+						<br><br>
+						<h1>Балабанова Екатерина</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><i>Студентка, пытающаяся </i> <b>создавать HTML</b></p> 
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-4 col-md-offset-2">
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>Место учебы</h3>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Родной город</h3>
+						<p>Рязань</p>
+					</article>
+					<article>
+						<h3>Школа</h3>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>Гимназия № 2 Ордена Знак Почета, имени академика И.П. Павлова</p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<article>
+						<h3>Фан факты обо мне или как я здесь оказалась</h3>
+						<p>- С 3 класса писала олимпиады по разным предметам, к 9 определилаcь с тем, <br>
+						     что "мой" — русский, а в 11 стала призеркой <b><i>"Высшей пробы"</i></b> и победительницей <b><i>олимпиады РГГУ</i></b> по нему же<br>
+						- Уже 5 лет играю с командой из родного города в <b><i>"Что? Где? Когда?"</i></b> <br>
+						- Успела год проучиться на ФиПЛе РГГУ и изучала там <b><i>вьетнамский</i></b> и <b><i>турецкий языки</i></b><br>
+						- Летом 2026 года была студенткой на <b><i>ЛЛШ</i></b></p>
+					</article>
+				</div>
+				<div class="col-md-2">
+					<h3>Я в соцсетях</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li> <a href="https://vk.ru/ktrrr_r">VK</a> </li>
+						<li> <a href="https://t.me/ktrrr_rr">Telegram</a> </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; Е. Балабанова, 2026</p> 
+			</div>
+		</footer>
+	</body>
+</html>
