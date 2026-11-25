@@ -961,5 +961,5 @@ Ert	vera" />2-Ertu</word>
 <word pos="PRON" lemma="?a?" />?eim</word>
 <word pos="VERB" lemma="snua" />snua</word>
 <word pos="CCONJ" lemma="og" />og</word>
-(.+?)\t(.+?)\t([A-Z]+)\n è lemma="([^"]*)" />\r?\n
-<word pos="\3" lemma="\2" />\1</word> è lemma="\1" />
+(.+?)\t(.+?)\t([A-Z]+)\n Ð¸ lemma="([^"]*)" />\r?\n
+<word pos="\3" lemma="\2" />\1</word> Ð¸ lemma="\1" />
